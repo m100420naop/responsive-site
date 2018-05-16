@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import "https://fonts.googleapis.com/css?family=Abel";
+/* Google Fonts用のCSSを読み込み */
+@import url(https://fonts.googleapis.com/css?family=Abel);
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: .1em;
+  color: #000000;
+  background-color:#ffffff}
+
+/*ボックスの上下*/
+.box1-1,.box1-2,.box1-3 {padding-bottom: 10px}
+
+/*ヘッダー画像*/
+.photo {
+    background-image: url("../image_lesson7/top-image.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+/*メインボックス*/
+.box1:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+
+/*概要*/
+.gaiyou a {
+  display: block;
+  background-color: #fafad2;
+  color: #000000;
+  text-align: center;
+  text-decoration: none; 
+}
+
+.gaiyou a:hover {
+  opacity: 0.8; }
+
+.gaiyou h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px; }
+
+.gaiyou p {
+  margin-top: 0;
+  margin-bottom: 0; }
+  
+  
+  /*フッター*/
+.fotter-text{
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:  #dddddd
+  
+}
+
+
+
+/*ボタン*/
+.btn{
+  text-align: center;
+  padding-bottom:  18px;
+  border-bottom: 1px dotted #CCCCCC;
+  background-color: #dddddd
+}
+
+
+
+.btn a{
+  
+  font-size:18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #deb887;
+  padding:10px 20px;
+  border-radius:5px;
+  display: inline-block;
+}
+
+.btn a:hover{opacity:  0.7;}
+
+
+
+
+/*#####769px以上######*/
+@media (min-width: 769px) {
+  
+ /*ヘッダー画像*/
+.photo {
+    background-image: url("../image_lesson7/top-image.jpg");
+    height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+  /*coffe,interior,pastaを横に並べる設定*/
+box1:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.box1-1 {float: left;
+         width: 32%;
+         margin-right: 2%}
+
+.box1-2  {float: left;
+         width: 32%;
+         margin-right: 2%}
+
+.box1-3  {float: left;
+         width: 32%;}
+  
+  /*cococafeの設定*/
+  .cococafe {
+    padding: 50px 0;
+    text-align: center;
+    color: #000000;
+    font-size: 20px; }
+    
+  
+}
+    
+    
+    
+/*#####768px以下######*/
+@media (max-width: 768px) {
+
+.cococafe {
+    padding: 10px 0;
+    text-align: center;
+    color: #000000;
+    font-size: 15px; } 
+/*ヘッダー画像*/
+.photo {
+    background-image: url("../image_lesson7/top-image.jpg");
+    height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center left;
+}
+/*cococafeの設定*/
+  .cococafe {
+    padding: 30px 0;
+    text-align: center;
+    color: #000000;
+    font-size: 20px; }
+    
+/*概要*/
+.gaiyou a {
+  display: block;
+  background-color: #fafad2;
+  color: #000000;
+  text-align: center;
+  text-decoration: none; }
+
+.gaiyou a:hover {
+  opacity: 0.8; }
+
+.gaiyou h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px; }
+
+.gaiyou p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+}
+
+
+
+
+
